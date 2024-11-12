@@ -44,7 +44,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: rgb(63, 54, 54);
+    background-color: rgba(63, 54, 54, 0.2);
     color: rgb(225, 225, 225);
 }
 
@@ -57,7 +57,7 @@ header img {
 }
 
 .mainmenu {
-    padding-top: 68px;
+    padding-top: 8rem;
 }
 
 .mainsobre {
@@ -73,40 +73,66 @@ header img {
     width: 40%;
 }
 
-.contenidoPersonas p {
-    background-color: white;
-    border: 6px solid rgb(238, 198, 111);
-    margin-bottom: 20px;
-    margin-top: 20px;
+/* Three columns side by side */
+.column {
+    float: left;
+    width: 24%;
+    margin-bottom: 16px;
+    margin-left: 40px;
+    padding: 0 8px;
 }
 
-.imgDiego {
-    width: 2000px;
-}
-
-.contenidoPersonas li {
+#conoce {
+    margin: 2rem;
     font-weight: bold;
-    font-size: larger;
-    border: solid 2px;
-    margin-top: 20px;
-    color: rgba(11, 10, 10, 0.451);
 }
 
-.contenidoPersonas a {
-    display: inline-block;
-    margin: auto 100% auto auto;
-    box-shadow: 1px 2px 11px 5px  rgb(185, 179, 8);
-    width: 200px;
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
 }
 
-.contenidoPersonas img {
-    width: 100%;
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.divSobre {
+/* Some left and right padding inside the container */
+.container {
+    padding: 0 16px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+/* Clear floats */
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+.row {
+    gap: 80px;
+}
+
+.sobre {
     text-align: center;
-    margin-left: 80px;
-    margin-right: 80px;
+    align-items: center;
+    align-content: center;
+    margin-left: 8rem;
 }
 
 .burger1 {
@@ -178,6 +204,21 @@ header img {
     position: absolute;
 }
 
+.bannermenu {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 36rem
+}
+
+.bannermenu img {
+    margin-top: 67px;
+    margin-bottom: 800px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
 
 input[type=text], [type=email], [type=tel],select {
     width: 100%;
@@ -216,6 +257,17 @@ input[type=submit]:hover {
     width: 60rem;
     background-color: rgba(167, 109, 22, 0.4);
     border-radius: 20px;
+}
+
+.contenedorcontacto {
+    text-align: top;
+    align-content: center;
+    border-color: #36240b;
+    text-align: center; 
+    max-width: 6000px; 
+    width: 100%; 
+    padding: 20px;
+    color: #8f651c;
 }
 
 footer {

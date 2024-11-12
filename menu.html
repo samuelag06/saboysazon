@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Menú</title>
 </head>
@@ -16,58 +17,94 @@
             <a href="contacto.html">Contáctanos</a>
         </nav>
     </header>
+    <!-- <section class="bannermenu">
+    </section> -->
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/banner3.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="images/banner4.jpeg" class="d-block w-100" alt="...">
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+    </div>
     <main class="mainmenu">
-        <div class="burger1">
-            <img src="images/burger1.jpeg" alt="Ejemplo de hamburguesa 1">
-            <div class="texto">
-                <h2>BURGUER MASTER</h2>
-                <br>
-                <p>Una hamburguesa que redefine la perfección. Carne jugosa de primera calidad, asada a la parrilla y sellada con ese toque ahumado irresistible, cubierta con queso derretido que se funde con cada bocado. Crujientes tiras de tocineta, cebollas caramelizadas y un toque de nuestra salsa secreta, todo dentro de un pan suave y dorado. ¡Un festín que eleva tus sentidos y te deja con ganas de más!
-                </p>
-            </div>
-            <br>
-            <div class="burger2">
-                <img src="images/burger2.jpeg" alt="" class="burger2">
-                
-            </div>
-            <p class="texto2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure odio laborum assumenda, debitis neque eum quasi? Recusandae quo delectus ex optio veniam illum magni necessitatibus, dicta sit totam rerum nesciunt.</p>
-
-        <div>
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/burger1.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4>Burguer Master</h4>
+                            <p class="card-text">Una hamburguesa master se destaca por su perfección. Un pan artesanal dorado, una jugosa y sabrosa carne de res de alta calidad, acompañada de queso gouda derretido, cebolla caramelizada, lechuga crujiente, tomate fresco y una salsa especial secreta. Cada bocado es una explosión de sabores y texturas que deleita el paladar y satisface como ninguna otra.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/burger2.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4>Arepa Burguer</h4>
+                            <p class="card-text"> La arepa burger es una fusión perfecta de sabores colombianos y el clásico de las hamburguesas. Utiliza una arepa crujiente, rellena con carne de res, queso derretido, lechuga fresca, tomate jugoso y una salsa especial que une todos los ingredientes en un bocado irresistible. Es una deliciosa mezcla de sabores que lleva la experiencia de la hamburguesa a otro nivel.</p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="images/burrito.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4>Burrito Master</h4>
+                            <p class="card-text">El burrito de carne es un festín envuelto en una tortilla suave. Lleno de jugosa carne de res sazonada a la perfección, acompañado de queso derretido, lechuga crujiente, pico de gallo fresco y una cremosa salsa de aguacate. Cada bocado es una explosión de sabores que te transporta directo a la cocina mexicana.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="images/perro.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4>Perro Burguer</h4>
+                                <p class="card-text">Un perro burger es una deliciosa mezcla de dos favoritos en uno. Imagina un pan de hamburguesa suave, relleno con una jugosa salchicha asada, cubierta de cebolla crujiente, mostaza y tomate. Todo coronado con salsas especiales que crean una combinación de sabores y texturas inigualables.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
     </main>
-    <footer>
-        <div class="footer-top">
-            <div class="footer-contact">
-              <p>Teléfono: (057) 3229535322</p>
-              <p>Correo: Sebastian9815@hotmail.com</p>
-              <p>Dirección: Carrera#52 #45-01, Guarne-Antioquia, Colombia</p>
+        <footer>
+            <div class="footer-top">
+                <div class="footer-contact">
+                <p>Teléfono: (057) 3233449520</p>
+                <p>Correo:saboysazon@outlook.com</p>
+                <p>Dirección: Carrera#45 #69-05, Medellin-Antioquia, Colombia</p>
+                </div>
+                <div class="footer-newsletter">
+                <form action="/subscribe" method="POST">
+                <label for="email">Suscríbete a nuestro boletín:</label>
+                <input autocomplete="off" type="email" id="email" name="email" placeholder="Tu correo electrónico">
+                <button type="submit">Suscribirse</button>
+                </form>
+                    </div>
+                    <div class="footer-sitemap">
+                    <ul>
+                    </ul>
+                    </div>
+                    <div class="footer-testimonials">
+                        <blockquote>"Excelente servicio y atención. Recomendado al 100%!" - Cliente Feliz</blockquote>
+                        <blockquote>"Los productos son de alta calidad, repetiré sin dudar." - Cliente Satisfecho</blockquote>
+                    </div>
+                    <div class="footer-copyright">
+                <p>&copy; 2024 SaboySazon. Todos los derechos reservados.</p>
             </div>
-             <div class="footer-newsletter">
-             <form action="/subscribe" method="POST">
-              <label for="email">Suscríbete a nuestro boletín:</label>
-              <input autocomplete="off" type="email" id="email" name="email" placeholder="Tu correo electrónico">
-              <button type="submit">Suscribirse</button>
-             </form>
-                </div>
-                <div class="footer-sitemap">
-                <ul>
-                <li type="none"><a href="#">Servicios</a></li> <li type="none"><a href="#">Productos</a></li><li type="none"><a href="#">Blog</a></li>  <li type="none"><a href="#">Contacto</a></li>
-                </ul>
-                </div>
-                <div class="footer-testimonials">
-                    <blockquote>"Excelente servicio y atención. Recomendado al 100%!" - Cliente Feliz</blockquote>
-                    <blockquote>"Los productos son de alta calidad, repetiré sin dudar." - Cliente Satisfecho</blockquote>
-                </div>
-                <div class="footer-cta">
-                    <a href="#" class="btn-cta">Solicitar Demo</a>
-                    <a href="#" class="btn-cta">Descargar nuestra App</a>
-                </div>
-                <div class="footer-certifications">
-                    <img src="#" alt="Certificado SSL">
-                    <img src="#" alt="Sello de Confianza Online">
-                </div>
-                <div class="footer-copyright">
-            <p>&copy; 2024 SaboySazon. Todos los derechos reservados.</p>
-          </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
