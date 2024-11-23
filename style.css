@@ -11,6 +11,7 @@ html {
 
 main {
     min-height: 100vh;
+
 }
 
 body {
@@ -19,7 +20,7 @@ body {
 
 header {
     padding-left: 20rem;
-    background-color: #e7b968;
+    background-color: rgb(232, 185, 105);
     display: flex;
     justify-content: left;
     align-items: center;
@@ -45,7 +46,7 @@ nav a {
 
 nav a:hover {
     background-color: rgba(63, 54, 54, 0.2);
-    color: rgb(225, 225, 225);
+    color: rgb(151, 102, 69);
 }
 
 header img {
@@ -89,9 +90,9 @@ header img {
 
 /* Display the columns below each other instead of side by side on small screens */
 @media screen and (max-width: 650px) {
-    .column {
-      width: 100%;
-      display: block;
+        .column {
+        width: 100%;
+        display: block;
     }
 }
 
@@ -99,6 +100,13 @@ header img {
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+
+.card tres {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 30px;
+} 
 
 /* Some left and right padding inside the container */
 .container {
@@ -260,14 +268,19 @@ input[type=submit]:hover {
 }
 
 .contenedorcontacto {
+    display: flex;
+    
     text-align: top;
     align-content: center;
     border-color: #36240b;
-    text-align: center; 
-    max-width: 6000px; 
-    width: 100%; 
-    padding: 20px;
+    max-width: 6000px;
+    width: 100%;
+    padding: 50px;
     color: #8f651c;
+}
+
+#contact {
+    
 }
 
 footer {
@@ -308,4 +321,20 @@ footer {
     color: rgb(34, 25, 18);
     box-shadow: 10px 10px rgb(251, 196, 128);
     
+}
+
+.footermenu {
+    margin-top: 60px;
+}
+
+.footercontacto {
+    margin-top: -130px;
+}
+
+#contact {
+    border-radius: 30px;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    margin-left: auto;
+    margin-right: auto;
 }
